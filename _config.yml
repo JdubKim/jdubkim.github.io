@@ -1,6 +1,7 @@
-title: ""
-author: ""
-description: ""
+title: "Jdub Kim's Blog"
+author: "Jdub Kim"
+description: "Deep Learning and Dev posts"
+url: "https://jdubkim.github.io"
 
 # Jekyll settings
 permalink: /:title/          # see https://jekyllrb.com/docs/permalinks/
@@ -23,8 +24,8 @@ navigation:                  # (optional) site navigation in the header
   - about.md
 
 icons:                       # (optional) icons in the header, see http://fontawesome.com/icons
-  envelope: "mailto:"
-  github: "https://github.com"
+  envelope: "mailto:jeewoo.kim17@imperial.ac.uk"
+  github: "https://github.com/jdubkim"
   rss: "/feed.xml"
 
 comments:                    # embed disqus or isso comments
