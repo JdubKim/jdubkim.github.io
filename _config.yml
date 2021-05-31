@@ -1,38 +1,33 @@
-title: "Jdub Kim's Blog"
-author: "Jdub Kim"
-description: "Deep Learning and Dev posts"
+title: "Jeewoo Kim's Tech Blog"
+author: "Jeewoo Kim"
+description: "Made with <b style=\"color: #f45;\">&lt;3</b>"
 url: "https://jdubkim.github.io"
+permalink: /:title/
+lang: "en"
+excerpt_separator: "\n\n\n"
+date_format: "%B %d, %Y"
 
-# Jekyll settings
-permalink: /:title/          # see https://jekyllrb.com/docs/permalinks/
-paginate: 2                  # number of articles per page, remove to disable pagination
-excerpt_separator: "\n\n\n"  # indicates the end of the excerpt by two blank lines
+# Layout
 
-# Page settings
-show_excerpts: true          # show article previews on the home page instead of headlines
-hide_title: false            # remove site heading in the header
-post_footer: true            # show previous and next links at the end of each post
-date_format: "%B %d, %Y"     # see http://shopify.github.io/liquid/filters/date/
+show_excerpts: true        # show article excerpts on the home page
+show_frame: true           # adds a gray frame to the site
+show_sidebar: false        # show a sidebar instead of the usual header
+minimal: false             # use a dark header
 
-# Theme settings
-style: default               # choose between "default", "contrast" and "minimal"
-dark_theme: false            # enables dark mode
+# Menu
 
-navigation:                  # (optional) site navigation in the header
-  - index.html
-  - archive.md
-  - about.md
+navigation:                # accepts {file, title, url, icon, sidebaricon}
+  - {file: "index.html"}
+  - {file: "README.md"}
 
-icons:                       # (optional) icons in the header, see http://fontawesome.com/icons
-  envelope: "mailto:jeewoo.kim17@imperial.ac.uk"
-  github: "https://github.com/jdubkim"
-  rss: "/feed.xml"
+external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
+  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
+  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
+  - {title: Subscribe, icon: rss, url: "/feed.xml"}
 
-comments:                    # embed disqus or isso comments
-#  disqus: ""
-#  isso: ""
+comments:
+#  disqus_shortname: ""    # see https://disqus.com/
+#  isso_domain: ""         # see https://posativ.org/isso/
 
-plugins: 
+plugins:
  - jekyll-feed
- - jekyll-paginate
- - jekyll-default-layout
